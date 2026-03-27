@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTG Perfumes</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">GTG</div>
+
+      <!-- Navigation -->
+      <nav class="nav" id="mainNav">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link nav-dropdown">Shop
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#" class="nav-link">Fragrances</a>
+        <a href="#" class="nav-link">About Us</a>
+        <a href="#" class="nav-link">Blog</a>
+        <a href="#" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="actions">
+        <!-- Hamburger Menu Button (mobile/tablet) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <!-- Search Icon -->
+        <div class="search-box" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="9" r="7" stroke="white" stroke-width="2"/>
+            <line x1="14.5" y1="14.5" x2="18.5" y2="18.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- Shop Now Button -->
+        <a href="#" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#" class="mobile-nav-link active">Home</a>
+      <a href="#" class="mobile-nav-link">Shop</a>
+      <a href="#" class="mobile-nav-link">Fragrances</a>
+      <a href="#" class="mobile-nav-link">About Us</a>
+      <a href="#" class="mobile-nav-link">Blog</a>
+      <a href="#" class="mobile-nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <!-- Award Badge -->
+      <div class="award-badge">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="7" r="5" stroke="white" stroke-width="1.5"/>
+          <path d="M6.5 12L5 17L9 15L13 17L11.5 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Awarded the best perfume in the world</span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="hero-heading">Live your best life.</h1>
+
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">10x</span>
+          <span class="stat-label">power</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">9</span>
+          <span class="stat-label">ingredients</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">20K+</span>
+          <span class="stat-label">happy customers</span>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <a href="#" class="btn btn-primary hero-cta">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ========================================
+       PRODUCT SECTION
+       ======================================== -->
+  <section class="product-section" id="productSection">
+    <div class="product-wrapper">
+      <div class="product-grid">
+
+        <!-- LEFT: Image Gallery -->
+        <div class="product-gallery">
+          <div class="gallery-main">
+            <div class="gallery-slides" id="gallerySlides">
+              <img src="images/classi.png" alt="GTG Perfume - Main" class="gallery-slide active" loading="lazy">
+              <img src="images/maple.jpg" alt="GTG Perfume - Studio" class="gallery-slide" loading="lazy">
+              <img src="images/blacky.jpg" alt="GTG Perfume - Amber" class="gallery-slide" loading="lazy">
+              <img src="images/redrose.jpg" alt="GTG Perfume - Floral" class="gallery-slide" loading="lazy">
+              <img src="images/threebot.jpg" alt="GTG Perfume - Original" class="gallery-slide" loading="lazy">
+              <img src="images/maple.jpg" alt="GTG Perfume - Collection" class="gallery-slide" loading="lazy">
+              <img src="images/blacky.jpg" alt="GTG Perfume - Nature" class="gallery-slide" loading="lazy">
+              <img src="images/redrose.jpg" alt="GTG Perfume - Daisy" class="gallery-slide" loading="lazy">
+            </div>
+            <div class="gallery-controls">
+              <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M8.5 1L1.5 8L8.5 15" stroke="#1b3a1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="gallery-dots" id="galleryDots">
+                <span class="gallery-dot active" data-index="0"></span>
+                <span class="gallery-dot" data-index="1"></span>
+                <span class="gallery-dot" data-index="2"></span>
+                <span class="gallery-dot" data-index="3"></span>
+                <span class="gallery-dot" data-index="4"></span>
+                <span class="gallery-dot" data-index="5"></span>
+                <span class="gallery-dot" data-index="6"></span>
+                <span class="gallery-dot" data-index="7"></span>
+              </div>
+              <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M1.5 1L8.5 8L1.5 15" stroke="#1b3a1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+
+            <!-- 
+            n-->   </div>
+          <div class="gallery-thumbs" id="galleryThumbs">
+            <div class="gallery-thumb active" data-index="0"><img src="images/threebot.jpg" alt="Thumb 1" loading="lazy"></div>
+            <div class="gallery-thumb" data-index="1"><img src="images/maple.jpg" alt="Thumb 2" loading="lazy"></div>
+            <div class="gallery-thumb" data-index="2"><img src="images/blacky.jpg" alt="Thumb 3" loading="lazy"></div>
+            <div class="gallery-thumb" data-index="3"><img src="images/redrose.jpg" alt="Thumb 4" loading="lazy"></div>
+            <div class="gallery-thumb" data-index="4"><img src="images/threebot.jpg" alt="Thumb 5" loading="lazy"></div>
+            <div class="gallery-thumb" data-index="5"><img src="images/maple.jpg" alt="Thumb 6" loading="lazy"></div>
+            <div class="gallery-thumb" data-index="6"><img src="images/blacky.jpg" alt="Thumb 7" loading="lazy"></div>
+            <div class="gallery-thumb" data-index="7"><img src="images/redrose.jpg" alt="Thumb 8" loading="lazy"></div>
+          </div>
+        </div>
+
+
+
+
+       
+
+
+
+
+
+
+            <!--  -->
+        
+
+        <!--  -->
+
+        <!-- RIGHT: Product Info -->
+        <div class="product-info">
+          <h2 class="product-title">GTG Perfumes</h2>
+          <div class="product-rating">
+            <div class="stars">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="#f4a623"><path d="M8 0l2.47 5.01L16 5.81l-4 3.9.94 5.49L8 12.49l-4.94 2.71L4 9.71 0 5.81l5.53-.8z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="#f4a623"><path d="M8 0l2.47 5.01L16 5.81l-4 3.9.94 5.49L8 12.49l-4.94 2.71L4 9.71 0 5.81l5.53-.8z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="#f4a623"><path d="M8 0l2.47 5.01L16 5.81l-4 3.9.94 5.49L8 12.49l-4.94 2.71L4 9.71 0 5.81l5.53-.8z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="#f4a623"><path d="M8 0l2.47 5.01L16 5.81l-4 3.9.94 5.49L8 12.49l-4.94 2.71L4 9.71 0 5.81l5.53-.8z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="#f4a623"><path d="M8 0l2.47 5.01L16 5.81l-4 3.9.94 5.49L8 12.49l-4.94 2.71L4 9.71 0 5.81l5.53-.8z"/></svg>
+            </div>
+            <span class="rating-text">4.7 (999+ reviews)</span>
+          </div>
+          <p class="product-desc">Experience the timeless allure backed by modern artistry, captured in every bottle of our fragrance. Crafted for those who seek to elevate their essence with purpose and sophistication.</p>
+
+          <!-- Subscription Card -->
+          <div class="subscription-card">
+            <div class="subscription-banner">Most Popular</div>
+
+            <!-- Single Subscription -->
+            <div class="subscription-option active" data-type="single">
+              <div class="subscription-header" data-toggle="single">
+                <label class="subscription-label">
+                  <input type="radio" name="subscription" value="single" checked>
+                  <span class="radio-custom"></span>
+                  <span class="subscription-name">Single Subscription</span>
+                </label>
+                <div class="subscription-price">
+                  <span class="price-current">$99.99</span>
+                  <span class="price-old">$146</span>
+                </div>
+              </div>
+              <div class="subscription-body">
+                <div class="fragrance-chooser">
+                  <h4 class="chooser-title">Choose a Fragrance</h4>
+                  <div class="fragrance-options">
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-single" value="original" checked>
+                      <span class="fragrance-card">
+                        <span class="best-seller-tag">BEST-SELLER</span>
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Original</span>
+                        <img src="images/std.png" alt="Original" class="fragrance-img">
+                      </span>
+                    </label>
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-single" value="lily">
+                      <span class="fragrance-card">
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Lily</span>
+                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily">
+                      </span>
+                    </label>
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-single" value="rose">
+                      <span class="fragrance-card">
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Rose</span>
+                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose">
+                      </span>
+                    </label>
+                  </div>
+                </div>
+<!-- a b -->
+
+                <div class="whats-included">
+                  <h4 class="chooser-title">What's Included:</h4>
+                  <div class="included-boxes">
+                    <div class="included-box">
+                      <span class="included-label">Every 30 Days</span>
+                      <img src="images/std.png" alt="Monthly bottle" class="included-main-img">
+                    </div>
+                    <div class="included-box">
+                      <span class="included-label">One Time <strong>(Free)</strong></span>
+                      <div class="included-bottles">
+                        <img src="images/std.png" alt="Original sampler" class="included-small-img">
+                        <img src="images/std.png" alt="Lily sampler" class="included-small-img fragrance-lily">
+                        <img src="images/std.png" alt="Rose sampler" class="included-small-img fragrance-rose">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="benefits-list">
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 1 Bottle Shipped Monthly</li>
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Free</strong> Sampler For Original, Lily And Rose Fragrances</li>
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>50% OFF</strong> Shipping</li>
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Pause Or Cancel Anytime After 3 Months Minimum</li>
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 28 Day Money Back Guarantee*</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Double Subscription -->
+            <div class="subscription-option" data-type="double">
+              <div class="subscription-header" data-toggle="double">
+                <label class="subscription-label">
+                  <input type="radio" name="subscription" value="double">
+                  <span class="radio-custom"></span>
+                  <span class="subscription-name">Double Subscription</span>
+                </label>
+                <div class="subscription-price">
+                  <span class="price-current">$169.99</span>
+                  <span class="price-old">$146</span>
+                </div>
+              </div>
+              <div class="subscription-body">
+                <!-- Fragrance 1 -->
+                <div class="fragrance-chooser">
+                  <h4 class="chooser-title">Choose  Fragrance 1</h4>
+                  <div class="fragrance-options">
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-double-1" value="original" checked>
+                      <span class="fragrance-card">
+                        <span class="best-seller-tag">BEST-SELLER</span>
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Original</span>
+                        <img src="images/std.png" alt="Original" class="fragrance-img">
+                      </span>
+                    </label>
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-double-1" value="lily">
+                      <span class="fragrance-card">
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Lily</span>
+                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily">
+                      </span>
+                    </label>
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-double-1" value="rose">
+                      <span class="fragrance-card">
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Rose</span>
+                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose">
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Fragrance 2 -->
+                <div class="fragrance-chooser">
+                  <h4 class="chooser-title">Choose  Fragrance 2</h4>
+                  <div class="fragrance-options">
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-double-2" value="original" checked>
+                      <span class="fragrance-card">
+                        <span class="best-seller-tag">BEST-SELLER</span>
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Original</span>
+                        <img src="images/std.png" alt="Original" class="fragrance-img">
+                      </span>
+                    </label>
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-double-2" value="lily">
+                      <span class="fragrance-card">
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Lily</span>
+                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily">
+                      </span>
+                    </label>
+                    <label class="fragrance-option">
+                      <input type="radio" name="fragrance-double-2" value="rose">
+                      <span class="fragrance-card">
+                        <span class="fragrance-radio-indicator"></span>
+                        <span class="fragrance-label">Rose</span>
+                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose">
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="whats-included">
+                  <h4 class="chooser-title">What's Included:</h4>
+                  <div class="included-boxes">
+                    <div class="included-box">
+                      <span class="included-label">Every 30 Days</span>
+                      <img src="images/std.png" alt="Monthly bottle" class="included-main-img">
+                    </div>
+                    <div class="included-box">
+                      <span class="included-label">One Time <strong>(Free)</strong></span>
+                      <div class="included-bottles">
+                        <img src="images/std.png" alt="Original sampler" class="included-small-img">
+                        <img src="images/std.png" alt="Lily sampler" class="included-small-img fragrance-lily">
+                        <img src="images/std.png" alt="Rose sampler" class="included-small-img fragrance-rose">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="benefits-list">
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 1 Bottle Shipped Monthly</li>
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Free</strong> Sampler For Original, Lily And Rose Fragrances</li>
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>50% OFF</strong> Shipping</li>
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Pause Or Cancel Anytime After 3 Months Minimum</li>
+                  <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#016630"/><path d="M4.5 8L7 10.5L11.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 28 Day Money Back Guarantee*</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add to Cart -->
+          <a href="#" class="btn btn-add-to-cart" id="addToCartBtn">Add to Cart</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ab -->
+
+  <!-- ========================================
+       OUR COLLECTION SECTION
+       ======================================== -->
+  <section class="collection-section">
+    <div class="collection-wrapper">
+      <div class="collection-grid">
+
+        <!-- LEFT: Text + Accordion -->
+        <div class="collection-left">
+          <h2 class="collection-heading">Our Collection</h2>
+
+          <div class="collection-accordion">
+            <div class="accordion-item active">
+              <button class="accordion-header" aria-expanded="true">
+                <span class="accordion-title">Signature Scents</span>
+                <span class="accordion-icon">
+                  <svg class="icon-minus" width="16" height="2" viewBox="0 0 16 2" fill="none"><line x1="0" y1="1" x2="16" y2="1" stroke="#1b3a1f" stroke-width="2"/></svg>
+                  <svg class="icon-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="8" y1="0" x2="8" y2="16" stroke="#1b3a1f" stroke-width="2"/><line x1="0" y1="8" x2="16" y2="8" stroke="#1b3a1f" stroke-width="2"/></svg>
+                </span>
+              </button>
+              <div class="accordion-body">
+                <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span class="accordion-title">Signature Scents</span>
+                <span class="accordion-icon">
+                  <svg class="icon-minus" width="16" height="2" viewBox="0 0 16 2" fill="none"><line x1="0" y1="1" x2="16" y2="1" stroke="#1b3a1f" stroke-width="2"/></svg>
+                  <svg class="icon-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="8" y1="0" x2="8" y2="16" stroke="#1b3a1f" stroke-width="2"/><line x1="0" y1="8" x2="16" y2="8" stroke="#1b3a1f" stroke-width="2"/></svg>
+                </span>
+              </button>
+              <div class="accordion-body">
+                <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span class="accordion-title">Signature Scents</span>
+                <span class="accordion-icon">
+                  <svg class="icon-minus" width="16" height="2" viewBox="0 0 16 2" fill="none"><line x1="0" y1="1" x2="16" y2="1" stroke="#1b3a1f" stroke-width="2"/></svg>
+                  <svg class="icon-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="8" y1="0" x2="8" y2="16" stroke="#1b3a1f" stroke-width="2"/><line x1="0" y1="8" x2="16" y2="8" stroke="#1b3a1f" stroke-width="2"/></svg>
+                </span>
+              </button>
+              <div class="accordion-body">
+                <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span class="accordion-title">Signature Scents</span>
+                <span class="accordion-icon">
+                  <svg class="icon-minus" width="16" height="2" viewBox="0 0 16 2" fill="none"><line x1="0" y1="1" x2="16" y2="1" stroke="#1b3a1f" stroke-width="2"/></svg>
+                  <svg class="icon-plus" width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="8" y1="0" x2="8" y2="16" stroke="#1b3a1f" stroke-width="2"/><line x1="0" y1="8" x2="16" y2="8" stroke="#1b3a1f" stroke-width="2"/></svg>
+                </span>
+              </button>
+              <div class="accordion-body">
+                <p>Discover our curated line of signature perfumes, designed to become your daily companion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Image -->
+        <div class="collection-right">
+          <img src="images/60a31355ad8d95a8a0b6a7d8d5cbfff286a9dbe8.jpg" alt="Our Collection" class="collection-image">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="stats-bar-inner">
+        <div class="stats-bar-item">
+          <span class="stats-bar-number" data-target="84">0%</span>
+          <p class="stats-bar-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="stats-bar-item">
+          <span class="stats-bar-number" data-target="78">0%</span>
+          <p class="stats-bar-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="stats-bar-item">
+          <span class="stats-bar-number" data-target="89">0%</span>
+          <p class="stats-bar-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="stats-bar-item">
+          <span class="stats-bar-number" data-target="90">0%</span>
+          <p class="stats-bar-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       WHY GTG IS #1 CHOICE SECTION
+       ======================================== -->
+  <section class="comparison-section">
+    <div class="comparison-wrapper">
+      <!-- Section Divider -->
+      <div class="section-divider">
+        <span></span><span></span><span></span>
+      </div>
+      <h2 class="comparison-heading">Why GTG is the #1 Choice</h2>
+
+      <div class="comparison-table-container">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="quality-col">Qualities</th>
+              <th class="brand-col brand-gtg">
+                <div class="brand-img-wrap brand-img-highlight">
+                  <img src="images/skincolor.jpg" alt="GTG">
+                </div>
+                <span class="brand-name">GTG</span>
+              </th>
+              <th class="brand-col">
+                <div class="brand-img-wrap">
+                  <img src="images/redrose.jpg" alt="Arose">
+                </div>
+                <span class="brand-name brand-name-muted">Arose</span>
+              </th>
+              <th class="brand-col">
+                <div class="brand-img-wrap">
+                  <img src="images/blacky.jpg" alt="Bella">
+                </div>
+                <span class="brand-name brand-name-muted">Bella</span>
+              </th>
+              <th class="brand-col">
+                <div class="brand-img-wrap">
+                  <img src="images/maple.jpg" alt="Dairies">
+                </div>
+                <span class="brand-name brand-name-muted">Dairies</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="quality-label">Potency Concentration</td>
+              <td class="val-highlight">10x</td>
+              <td>1x</td>
+              <td>1x</td>
+              <td>10x</td>
+            </tr>
+            <tr>
+              <td class="quality-label">Longevity</td>
+              <td class="val-highlight"><span class="icon-check">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#016630"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-check-outline">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#016630" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#016630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+            </tr>
+            <tr>
+              <td class="quality-label">Sillage</td>
+              <td class="val-highlight"><span class="icon-check">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#016630"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+            </tr>
+            <tr>
+              <td class="quality-label">Bottle Design Score</td>
+              <td class="val-highlight">9</td>
+              <td>5</td>
+              <td>6</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td class="quality-label">Blend and Harmony</td>
+              <td class="val-highlight"><span class="icon-check">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#016630"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+            </tr>
+            <tr>
+              <td class="quality-label">Skin Compatibility</td>
+              <td class="val-highlight"><span class="icon-check">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#016630"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+            </tr>
+            <tr>
+              <td class="quality-label">Scent Profile</td>
+              <td class="val-highlight"><span class="icon-check">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#016630"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+              <td><span class="icon-check-outline">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#016630" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#016630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+            </tr>
+            <tr>
+              <td class="quality-label">Price vs. Quality</td>
+              <td class="val-highlight"><span class="icon-check">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#016630"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+              <td><span class="icon-check-outline">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#016630" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#016630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+              <td><span class="icon-cross">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#ccc" stroke-width="1.5"/><path d="M7 7l6 6M13 7l-6 6" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span></td>
+              <td><span class="icon-check-outline">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#016630" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#016630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CTA -->
+      <div class="comparison-cta">
+        <a href="#" class="btn btn-primary comparison-btn">Try It Risk-Free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">GTG</div>
+        </div>
+
+        
+
+        <!-- Links Column 1 -->
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Fragrances</a>
+        </div>
+
+        <!-- Links Column 2 -->
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-social">
+          <a href="#" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <span>X</span>
+          </a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <p class="newsletter-text">Join our newsletter to stay up to date on features and releases.</p>
+          <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+            <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+          </form>
+          <p class="newsletter-disclaimer">By subscribing you agree to with our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
