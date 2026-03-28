@@ -253,7 +253,7 @@ img {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-image: url('../images/hero-bg.png');
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -393,6 +393,7 @@ img {
   object-fit: contain;
   opacity: 0;
   transition: opacity 0.4s ease;
+  will-change: opacity;
 }
 
 .gallery-slide.active {
@@ -853,6 +854,8 @@ img {
 .collection-section {
   padding-top: 100px;
   background: #ffffff;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
 }
 
 .collection-wrapper {
@@ -1016,6 +1019,8 @@ img {
 .comparison-section {
   padding: 80px 0 60px;
   background: #ffffff;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
 }
 
 .comparison-wrapper {
@@ -1172,6 +1177,8 @@ img {
   background: #0d2618;
   padding: 60px 0 48px;
   margin-top: 0;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 300px;
 }
 
 .footer-inner {

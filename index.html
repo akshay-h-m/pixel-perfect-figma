@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GTG Perfumes</title>
 
+  <!-- Preload critical hero background -->
+  <link rel="preload" as="image" href="images/hero-bg.jpg">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,14 +120,14 @@
         <div class="product-gallery">
           <div class="gallery-main">
             <div class="gallery-slides" id="gallerySlides">
-              <img src="images/classi.png" alt="GTG Perfume - Main" class="gallery-slide active" loading="lazy">
-              <img src="images/maple.jpg" alt="GTG Perfume - Studio" class="gallery-slide" loading="lazy">
-              <img src="images/blacky.jpg" alt="GTG Perfume - Amber" class="gallery-slide" loading="lazy">
-              <img src="images/redrose.jpg" alt="GTG Perfume - Floral" class="gallery-slide" loading="lazy">
-              <img src="images/threebot.jpg" alt="GTG Perfume - Original" class="gallery-slide" loading="lazy">
-              <img src="images/maple.jpg" alt="GTG Perfume - Collection" class="gallery-slide" loading="lazy">
-              <img src="images/blacky.jpg" alt="GTG Perfume - Nature" class="gallery-slide" loading="lazy">
-              <img src="images/redrose.jpg" alt="GTG Perfume - Daisy" class="gallery-slide" loading="lazy">
+              <img src="images/classi.jpg" alt="GTG Perfume - Main" class="gallery-slide active" fetchpriority="low">
+              <img src="images/maple.jpg" alt="GTG Perfume - Studio" class="gallery-slide" loading="lazy" decoding="async">
+              <img src="images/blacky.jpg" alt="GTG Perfume - Amber" class="gallery-slide" loading="lazy" decoding="async">
+              <img src="images/redrose.jpg" alt="GTG Perfume - Floral" class="gallery-slide" loading="lazy" decoding="async">
+              <img src="images/threebot.jpg" alt="GTG Perfume - Original" class="gallery-slide" loading="lazy" decoding="async">
+              <img src="images/maple.jpg" alt="GTG Perfume - Collection" class="gallery-slide" loading="lazy" decoding="async">
+              <img src="images/blacky.jpg" alt="GTG Perfume - Nature" class="gallery-slide" loading="lazy" decoding="async">
+              <img src="images/redrose.jpg" alt="GTG Perfume - Daisy" class="gallery-slide" loading="lazy" decoding="async">
             </div>
             <div class="gallery-controls">
               <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">
@@ -148,14 +151,14 @@
             <!-- 
             n-->   </div>
           <div class="gallery-thumbs" id="galleryThumbs">
-            <div class="gallery-thumb active" data-index="0"><img src="images/threebot.jpg" alt="Thumb 1" loading="lazy"></div>
-            <div class="gallery-thumb" data-index="1"><img src="images/maple.jpg" alt="Thumb 2" loading="lazy"></div>
-            <div class="gallery-thumb" data-index="2"><img src="images/blacky.jpg" alt="Thumb 3" loading="lazy"></div>
-            <div class="gallery-thumb" data-index="3"><img src="images/redrose.jpg" alt="Thumb 4" loading="lazy"></div>
-            <div class="gallery-thumb" data-index="4"><img src="images/threebot.jpg" alt="Thumb 5" loading="lazy"></div>
-            <div class="gallery-thumb" data-index="5"><img src="images/maple.jpg" alt="Thumb 6" loading="lazy"></div>
-            <div class="gallery-thumb" data-index="6"><img src="images/blacky.jpg" alt="Thumb 7" loading="lazy"></div>
-            <div class="gallery-thumb" data-index="7"><img src="images/redrose.jpg" alt="Thumb 8" loading="lazy"></div>
+            <div class="gallery-thumb active" data-index="0"><img src="images/threebot.jpg" alt="Thumb 1" loading="lazy" decoding="async"></div>
+            <div class="gallery-thumb" data-index="1"><img src="images/maple.jpg" alt="Thumb 2" loading="lazy" decoding="async"></div>
+            <div class="gallery-thumb" data-index="2"><img src="images/blacky.jpg" alt="Thumb 3" loading="lazy" decoding="async"></div>
+            <div class="gallery-thumb" data-index="3"><img src="images/redrose.jpg" alt="Thumb 4" loading="lazy" decoding="async"></div>
+            <div class="gallery-thumb" data-index="4"><img src="images/threebot.jpg" alt="Thumb 5" loading="lazy" decoding="async"></div>
+            <div class="gallery-thumb" data-index="5"><img src="images/maple.jpg" alt="Thumb 6" loading="lazy" decoding="async"></div>
+            <div class="gallery-thumb" data-index="6"><img src="images/blacky.jpg" alt="Thumb 7" loading="lazy" decoding="async"></div>
+            <div class="gallery-thumb" data-index="7"><img src="images/redrose.jpg" alt="Thumb 8" loading="lazy" decoding="async"></div>
           </div>
         </div>
 
@@ -216,7 +219,7 @@
                         <span class="best-seller-tag">BEST-SELLER</span>
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Original</span>
-                        <img src="images/std.png" alt="Original" class="fragrance-img">
+                        <img src="images/std.png" alt="Original" class="fragrance-img" loading="lazy" decoding="async">
                       </span>
                     </label>
                     <label class="fragrance-option">
@@ -224,7 +227,7 @@
                       <span class="fragrance-card">
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Lily</span>
-                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily">
+                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily" loading="lazy" decoding="async">
                       </span>
                     </label>
                     <label class="fragrance-option">
@@ -232,7 +235,7 @@
                       <span class="fragrance-card">
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Rose</span>
-                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose">
+                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose" loading="lazy" decoding="async">
                       </span>
                     </label>
                   </div>
@@ -244,14 +247,14 @@
                   <div class="included-boxes">
                     <div class="included-box">
                       <span class="included-label">Every 30 Days</span>
-                      <img src="images/std.png" alt="Monthly bottle" class="included-main-img">
+                      <img src="images/std.png" alt="Monthly bottle" class="included-main-img" loading="lazy" decoding="async">
                     </div>
                     <div class="included-box">
                       <span class="included-label">One Time <strong>(Free)</strong></span>
                       <div class="included-bottles">
-                        <img src="images/std.png" alt="Original sampler" class="included-small-img">
-                        <img src="images/std.png" alt="Lily sampler" class="included-small-img fragrance-lily">
-                        <img src="images/std.png" alt="Rose sampler" class="included-small-img fragrance-rose">
+                        <img src="images/std.png" alt="Original sampler" class="included-small-img" loading="lazy" decoding="async">
+                        <img src="images/std.png" alt="Lily sampler" class="included-small-img fragrance-lily" loading="lazy" decoding="async">
+                        <img src="images/std.png" alt="Rose sampler" class="included-small-img fragrance-rose" loading="lazy" decoding="async">
                       </div>
                     </div>
                   </div>
@@ -291,7 +294,7 @@
                         <span class="best-seller-tag">BEST-SELLER</span>
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Original</span>
-                        <img src="images/std.png" alt="Original" class="fragrance-img">
+                        <img src="images/std.png" alt="Original" class="fragrance-img" loading="lazy" decoding="async">
                       </span>
                     </label>
                     <label class="fragrance-option">
@@ -299,7 +302,7 @@
                       <span class="fragrance-card">
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Lily</span>
-                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily">
+                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily" loading="lazy" decoding="async">
                       </span>
                     </label>
                     <label class="fragrance-option">
@@ -307,7 +310,7 @@
                       <span class="fragrance-card">
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Rose</span>
-                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose">
+                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose" loading="lazy" decoding="async">
                       </span>
                     </label>
                   </div>
@@ -323,7 +326,7 @@
                         <span class="best-seller-tag">BEST-SELLER</span>
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Original</span>
-                        <img src="images/std.png" alt="Original" class="fragrance-img">
+                        <img src="images/std.png" alt="Original" class="fragrance-img" loading="lazy" decoding="async">
                       </span>
                     </label>
                     <label class="fragrance-option">
@@ -331,7 +334,7 @@
                       <span class="fragrance-card">
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Lily</span>
-                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily">
+                        <img src="images/std.png" alt="Lily" class="fragrance-img fragrance-lily" loading="lazy" decoding="async">
                       </span>
                     </label>
                     <label class="fragrance-option">
@@ -339,7 +342,7 @@
                       <span class="fragrance-card">
                         <span class="fragrance-radio-indicator"></span>
                         <span class="fragrance-label">Rose</span>
-                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose">
+                        <img src="images/std.png" alt="Rose" class="fragrance-img fragrance-rose" loading="lazy" decoding="async">
                       </span>
                     </label>
                   </div>
@@ -350,14 +353,14 @@
                   <div class="included-boxes">
                     <div class="included-box">
                       <span class="included-label">Every 30 Days</span>
-                      <img src="images/std.png" alt="Monthly bottle" class="included-main-img">
+                      <img src="images/std.png" alt="Monthly bottle" class="included-main-img" loading="lazy" decoding="async">
                     </div>
                     <div class="included-box">
                       <span class="included-label">One Time <strong>(Free)</strong></span>
                       <div class="included-bottles">
-                        <img src="images/std.png" alt="Original sampler" class="included-small-img">
-                        <img src="images/std.png" alt="Lily sampler" class="included-small-img fragrance-lily">
-                        <img src="images/std.png" alt="Rose sampler" class="included-small-img fragrance-rose">
+                        <img src="images/std.png" alt="Original sampler" class="included-small-img" loading="lazy" decoding="async">
+                        <img src="images/std.png" alt="Lily sampler" class="included-small-img fragrance-lily" loading="lazy" decoding="async">
+                        <img src="images/std.png" alt="Rose sampler" class="included-small-img fragrance-rose" loading="lazy" decoding="async">
                       </div>
                     </div>
                   </div>
@@ -452,7 +455,7 @@
 
         <!-- RIGHT: Image -->
         <div class="collection-right">
-          <img src="images/60a31355ad8d95a8a0b6a7d8d5cbfff286a9dbe8.jpg" alt="Our Collection" class="collection-image">
+          <img src="images/60a31355ad8d95a8a0b6a7d8d5cbfff286a9dbe8.jpg" alt="Our Collection" class="collection-image" loading="lazy" decoding="async">
         </div>
 
       </div>
@@ -499,25 +502,25 @@
               <th class="quality-col">Qualities</th>
               <th class="brand-col brand-gtg">
                 <div class="brand-img-wrap brand-img-highlight">
-                  <img src="images/skincolor.jpg" alt="GTG">
+                  <img src="images/skincolor.jpg" alt="GTG" loading="lazy" decoding="async">
                 </div>
                 <span class="brand-name">GTG</span>
               </th>
               <th class="brand-col">
                 <div class="brand-img-wrap">
-                  <img src="images/redrose.jpg" alt="Arose">
+                  <img src="images/redrose.jpg" alt="Arose" loading="lazy" decoding="async">
                 </div>
                 <span class="brand-name brand-name-muted">Arose</span>
               </th>
               <th class="brand-col">
                 <div class="brand-img-wrap">
-                  <img src="images/blacky.jpg" alt="Bella">
+                  <img src="images/blacky.jpg" alt="Bella" loading="lazy" decoding="async">
                 </div>
                 <span class="brand-name brand-name-muted">Bella</span>
               </th>
               <th class="brand-col">
                 <div class="brand-img-wrap">
-                  <img src="images/maple.jpg" alt="Dairies">
+                  <img src="images/maple.jpg" alt="Dairies" loading="lazy" decoding="async">
                 </div>
                 <span class="brand-name brand-name-muted">Dairies</span>
               </th>
@@ -696,6 +699,6 @@
   </footer>
 
   <!-- JavaScript -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
